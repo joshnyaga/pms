@@ -21,7 +21,7 @@ app.use(logger("dev"));
 app.use(cookieParser());
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.options("*", cors({ credentials: true, origin: "http://localhost:3000" }));
-
+app.disable('etag');
 //middlewware for routers
 app.use("/api/pms/v1/admin", adminRouter);
 app.use("/api/pms/v1/hospital", hospitalRouter);

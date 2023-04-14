@@ -59,7 +59,8 @@ module.exports= {
             if(!results){
                 return res.json({
                     success: false,
-                    message: "Email does not exist"
+                    message: "Email does not exist",
+                    status: 404
                 })
             }
             const result = await compare(body.password, results.password)
@@ -77,6 +78,38 @@ module.exports= {
                     data:results
                 })
             }
+        })
+    },
+    checkLogIn:(req,res)=>{
+        const body = req.body;
+        getUserByEmail(body.email,async (err,results)=>{
+            if(err){
+                console.log(err)
+                return;
+            }
+            if(!results){
+                return res.json({
+                    success: false,
+                    message: "You are not logged in",
+                    status: 404
+                })
+            }
+        })
+    },
+    logout:(req, res)=>{
+        res.clearCookie("access_token");
+        return res.json({
+            success:true,
+            message:"You have logged out"
+        })
+        
+    
+        
+    },
+    getAdmin:(req,res)=>{
+        return res.json({
+            success:true,
+            data:req.user
         })
     }
 }
