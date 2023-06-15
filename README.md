@@ -1,4 +1,4 @@
-##Pharmacy Management System
+`#`Pharmacy Management System
 
 PMS is a pharmacy management system that helps in operating a pharmacy. The following project is suitable for student's project.
 
