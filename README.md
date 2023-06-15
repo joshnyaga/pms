@@ -2,7 +2,7 @@
 
 PMS is a pharmacy management system that helps in operating a pharmacy. The following project is suitable for student's project.
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-50-23.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-50-23.png)
 
 
 ## Admin
@@ -13,12 +13,12 @@ View, Update and Add medicine stock
 
 View and Add pharmacists
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-51-03.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-51-03.png)
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-51-12.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-51-12.png)
 
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-51-21.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-51-21.png)
 
 ## Pharmacists
 
@@ -34,11 +34,11 @@ Add the prescription of the patient
 
 Admnister prescription to the patient
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-53-23.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-53-23.png)
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-53-30.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-53-30.png)
 
-[Screenshot](/imgs/Screenshot%20from%202023-06-15%2011-53-34.png)
+[Screenshot](./imgs/Screenshot%20from%202023-06-15%2011-53-34.png)
 
 ## Overall System data requirements
 
