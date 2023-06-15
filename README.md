@@ -2,7 +2,7 @@
 
 PMS is a pharmacy management system that helps in operating a pharmacy. The following project is suitable for student's project.
 
-[Screenshot](./imgs/screenshot1.png)
+![Screenshot](./imgs/screenshot1.png)
 
 
 ## Admin
@@ -13,12 +13,12 @@ View, Update and Add medicine stock
 
 View and Add pharmacists
 
-[Screenshot](./imgs/screenshot2.png)
+![Screenshot](./imgs/screenshot2.png)
 
-[Screenshot](./imgs/screenshot3.png)
+![Screenshot](./imgs/screenshot3.png)
 
 
-[Screenshot](./imgs/screenshot4.png)
+![Screenshot](./imgs/screenshot4.png)
 
 ## Pharmacists
 
@@ -34,11 +34,11 @@ Add the prescription of the patient
 
 Admnister prescription to the patient
 
-[Screenshot](./imgs/screenshot5.png)
+![Screenshot](./imgs/screenshot5.png)
 
-[Screenshot](./imgs/screenshot6.png)
+![Screenshot](./imgs/screenshot6.png)
 
-[Screenshot](./imgs/screenshot7.png)
+![Screenshot](./imgs/screenshot7.png)
 
 ## Overall System data requirements
 
