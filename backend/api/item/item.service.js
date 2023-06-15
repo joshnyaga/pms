@@ -21,10 +21,10 @@ module.exports = {
             }
         )
     },
-    getAll:(callback)=>{
+    getAll:(id,callback)=>{
         pool.query(
-            `select * from prescription_item`,
-            [],
+            `SELECT drug_id,  medicine_name, prescription_quantity as quantity, instructions_to_customers as instructions, date_of_expiry, (SELECT hospital_name from hospital_details where hospital_id=prescription_item.hospital_id) as hospital FROM  prescription_item WHERE prescription_id=?;`,
+            [id],
             (error,results, field)=>{
                 if(error){
                     return callback(error)

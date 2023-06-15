@@ -7,8 +7,8 @@ module.exports = {
             [
                 data.username,
                 data.email,
-                data.password,
-                data.details
+                data.details,
+		    data.password,
             ],
             (error,results,fields)=>{
                 if(error){
@@ -63,8 +63,8 @@ module.exports = {
             [
                 data.username,
                 data.email,
-                data.password,
                 data.details,
+		    data.password,
                 data.id
             ],
             (error,results,fields)=>{

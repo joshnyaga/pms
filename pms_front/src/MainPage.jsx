@@ -32,6 +32,7 @@ const MainPage = () => {
       };
       const handleLogin= async (e) => {
         e.preventDefault();
+        console.log(input)
         try {
           const res = await axios.post(
             "http://localhost:4000/api/pms/v1/pharmacists/login",
@@ -39,13 +40,13 @@ const MainPage = () => {
               ...input,
             },
             {
-              withCredentials: true,
+              withCredentials:true
             }
           );
           console.log(res.data)
           res.data.success===false ? toast.error(res.data.message): navigate("/pharmacist")
         } catch (error) {
-          console.log(error.response.data.message);
+          console.log(error.response);
         }
       };
   return (

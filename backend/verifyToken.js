@@ -21,7 +21,7 @@ const verifyToken = (req,res, next)=>{
 };
 const verifyTokenAdmin = (req,res, next)=>{
     const token = req.cookies.access_token;
-    console.log(token)
+    console.log(req.cookies)
     if(!token) {
         return res.status(401).json({
             "success":false,

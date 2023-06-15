@@ -19,10 +19,10 @@ module.exports = {
             }
         )
     },
-    getAll:(callback)=>{
+    getAll:(id,callback)=>{
         pool.query(
-            `select * from prescription`,
-            [],
+            `SELECT prescription_id, (SELECT pharmacist_name from pharmacist where pharmacist_id = prescription.pharmacist_id) as pharmacist, prescription_issue_date, prescription_filled_date FROM prescription WHERE customer_id=?;`,
+            [id],
             (error,results, field)=>{
                 if(error){
                     return callback(error)

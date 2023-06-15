@@ -18,7 +18,8 @@ module.exports= {
         })
     },
     getPrescriptions:(req,res)=>{
-        getAll((err, results)=>{
+        const id=req.params.cid; 
+        getAll(id,(err, results)=>{
             if(err){
                 console.log(err);
                 return;

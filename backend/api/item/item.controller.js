@@ -18,7 +18,8 @@ module.exports= {
         })
     },
     getItems:(req,res)=>{
-        getAll((err, results)=>{
+        const id=req.params.id; 
+        getAll(id, (err, results)=>{
             if(err){
                 console.log(err);
                 return;

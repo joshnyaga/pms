@@ -26,7 +26,7 @@ const Account = () => {
     const handleUpdate = async(e)=>{
         e.preventDefault()
         console.log(input)
-        if(input.username==""||input.email===""||input.password===""||input.passConfirm===""){
+        if(input.username===""||input.email===""||input.password===""||input.passConfirm===""){
             toast.warning("Please fill all fields")
         }else if(input.password !== input.passConfirm){
             toast.warning("Passwords do not match")

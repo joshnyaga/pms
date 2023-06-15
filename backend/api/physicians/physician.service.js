@@ -20,7 +20,7 @@ module.exports = {
     },
     getAll:(callback)=>{
         pool.query(
-            `select * from physician`,
+            `SELECT physician_id, physician_name, physician_details, (SELECT hospital_name from hospital_details where hospital_id = physician.hospital_id) as hospital_name FROM physician;`,
             [],
             (error,results, field)=>{
                 if(error){
@@ -46,12 +46,11 @@ module.exports = {
     },
     update:(data, callBack)=>{
         pool.query(
-            `UPDATE physician SET physician_name=?,physician_details=?,hospital_id=?, zip_code=? WHERE hospital_id=?`,
+            `UPDATE physician SET physician_name=?,physician_details=?,hospital_id=?WHERE hospital_id=?`,
             [
                 data.name,
                 data.physician_details,
                 data.hid,
-                data.zip_code,
                 data.id
             ],
             (error,results,fields)=>{

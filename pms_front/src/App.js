@@ -7,6 +7,10 @@ import NavPharmacists from './components/navs/NavPharmacists';
 import Patients from './pharmacist/Patients';
 import Medicine from './admin/Medicine';
 import Account from './admin/Account';
+import AccountP from './pharmacist/AccountP';
+import Hospital from './pharmacist/Hospital';
+import Physician from './pharmacist/Physician';
+import Prescription from './pharmacist/Prescription';
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +24,10 @@ function App() {
         </Route>
         <Route path="/pharmacist" element={<NavPharmacists />}>
           <Route index element={<Patients />} />
-          
+          <Route path="account" element={<AccountP />} />
+          <Route path="hospitals" element={<Hospital />} />
+          <Route path="physicians" element={<Physician />} />
+          <Route path="prescription/*" element={<Prescription />} />
         </Route>
       </Routes>
     </BrowserRouter>
