@@ -1,11 +1,11 @@
-`#`Pharmacy Management System
+# Pharmacy Management System
 
 PMS is a pharmacy management system that helps in operating a pharmacy. The following project is suitable for student's project.
 
 
 
 
-##Admin
+## Admin
 
 Login
 
@@ -13,7 +13,7 @@ View, Update and Add medicine stock
 
 View and Add pharmacists
 
-##Pharmacists
+## Pharmacists
 
 Login
 Add new patient
@@ -29,27 +29,27 @@ Admnister prescription to the patient
 
 The following are the system data requirements-
 
-    1. Pharmacist credentials
+### Pharmacist credentials
 This is the pharmacist who runs the pharmacy. In one pharmacy, there can be many pharmacists.
 
-    2. An admin user
+### An admin user
 This is the administrator of the system who adds the pharmacists and updates medicine inventory
 
-    3. A customer
+### A customer
 This is a customer who has some prescription from a hospital and wants to purchase medication.
 
-    4. Medicine inventory
+### Medicine inventory
 This is the stock of medicine that the pharmacy currently posses.
 
 
 
-##Installation
+## Installation
 Download Mysql Workbench and a Mysql server to connect the database
 
 Create a database named pms, then import the sql file to the database.
 
 In the backend folder, create a dotenv file and set up the following
-``
+```
 APP_PORT=4000
 DB_PORT=3306
 DB_HOST=localhost
@@ -57,5 +57,4 @@ DB_USER=root
 DB_PASS=
 MYSQL_DB=pms
 KEY=
-
-``
+```
